@@ -74,28 +74,28 @@
   // ../server/src/ui/components/loading-spinner.svg
   var require_loading_spinner = __commonJS({
     "../server/src/ui/components/loading-spinner.svg"(exports, module) {
-      module.exports = "./assets/loading-spinner-N6LEBK7Y.svg";
+      module.exports = "../../webjars/vividus-lighthouse-viewer-adaptation/assets/loading-spinner-N6LEBK7Y.svg";
     }
   });
 
   // ../server/src/ui/favicon.svg
   var require_favicon = __commonJS({
     "../server/src/ui/favicon.svg"(exports, module) {
-      module.exports = "./assets/favicon-PWXHY3O5.svg";
+      module.exports = "../../webjars/vividus-lighthouse-viewer-adaptation/assets/favicon-PWXHY3O5.svg";
     }
   });
 
   // ../server/src/ui/routes/project-list/confetti.svg
   var require_confetti = __commonJS({
     "../server/src/ui/routes/project-list/confetti.svg"(exports, module) {
-      module.exports = "./assets/confetti-NE5ZCURM.svg";
+      module.exports = "../../webjars/vividus-lighthouse-viewer-adaptation/assets/confetti-NE5ZCURM.svg";
     }
   });
 
   // ../server/src/ui/logo.svg
   var require_logo = __commonJS({
     "../server/src/ui/logo.svg"(exports, module) {
-      module.exports = "./assets/logo-7LKJDYBP.svg";
+      module.exports = "../../webjars/vividus-lighthouse-viewer-adaptation/assets/logo-7LKJDYBP.svg";
     }
   });
 
@@ -3558,8 +3558,12 @@
   var App = () => {
     const initialReport = void 0;
     const [isLoading, setIsLoading] = h2(false);
-    const [baseReport, setBaseReport] = h2(initialReport);
-    const [compareReport, setCompareReport] = h2(initialReport);
+    const [baseReport, setBaseReport] = h2({
+      lhr: __LIGHTHOUSE_JSON_BASE__
+    });
+    const [compareReport, setCompareReport] = h2({
+      lhr: __LIGHTHOUSE_JSON_COMPARE__
+    });
     const [toasts, setToasts] = h2([]);
     const addToastUnmemoized = (toast) => setToasts((toasts2) => [...toasts2, toast]);
     const addToast = T2(addToastUnmemoized, [setToasts]);
@@ -3617,4 +3621,4 @@
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
  */
-//# sourceMappingURL=chunks/entry-AEMYZTEQ.js.map
+//# sourceMappingURL=../../webjars/vividus-lighthouse-viewer-adaptation/chunks/entry-AEMYZTEQ.js.map
