@@ -32,14 +32,14 @@
     ```
 
 1. Perform the following replacements in `index.html` file
-    * `./chunks/` should be replaced with `../../webjars/viewer/chunks/`
-    * `assets/` should be replaced with `../../webjars/viewer/assets/`
+    * `./chunks/` should be replaced with `../../webjars/vividus-lighthouse-viewer-adaptation/chunks/`
+    * `assets/` should be replaced with `../../webjars/vividus-lighthouse-viewer-adaptation/assets/`
 1. Perform the following replacements in `chunks/entry-<rand>.js` file
-    * `./assets/` should be replaced with `../../webjars/viewer/assets/`
-    * `chunks/` should be replaced with `../../webjars/viewer/chunks/`
+    * `./assets/` should be replaced with `../../webjars/vividus-lighthouse-viewer-adaptation/assets/`
+    * `chunks/` should be replaced with `../../webjars/vividus-lighthouse-viewer-adaptation/chunks/`
 1. Perform the following replacements in `chunks/entry-<rand>.css` file
-    * `../assets/` should be replaced `../../viewer/assets/`
-    * `chunks/` should be replaced with `../../webjars/viewer/chunks/`
+    * `../assets/` should be replaced `../../vividus-lighthouse-viewer-adaptation/assets/`
+    * `chunks/` should be replaced with `../../webjars/vividus-lighthouse-viewer-adaptation/chunks/`
 1. Commit the changes using `Customization` message format
 1. Minify `chunks/entry-<rand>.js` using [JS minification tool](https://www.toptal.com/developers/javascript-minifier) and replace `chunks/entry-<rand>.js` file content with the minified content
 1. Commit the changes using `Minified` message format
