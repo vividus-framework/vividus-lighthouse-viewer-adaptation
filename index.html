@@ -8,13 +8,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" sizes="32x32" href="assets/favicon-32x32-e9e95133.png">
-    <link rel="shortcut icon" href="assets/favicon-196x196-7e07c528.png">
-    <link rel="icon" sizes="196x196" href="assets/favicon-196x196-7e07c528.png">
-    <link rel="icon" sizes="16x16" href="assets/favicon-16x16-7a9d07ba.png">
-    <link rel="icon" sizes="48x48" href="assets/favicon-48x48-7fe43b6a.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-322d6266.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="assets/apple-touch-icon-ipad-bb198203.png">
+    <link rel="icon" sizes="32x32" href="../../webjars/vividus-lighthouse-viewer-adaptation/assets/favicon-32x32-e9e95133.png">
+    <link rel="shortcut icon" href="../../webjars/vividus-lighthouse-viewer-adaptation/assets/favicon-196x196-7e07c528.png">
+    <link rel="icon" sizes="196x196" href="../../webjars/vividus-lighthouse-viewer-adaptation/assets/favicon-196x196-7e07c528.png">
+    <link rel="icon" sizes="16x16" href="../../webjars/vividus-lighthouse-viewer-adaptation/assets/favicon-16x16-7a9d07ba.png">
+    <link rel="icon" sizes="48x48" href="../../webjars/vividus-lighthouse-viewer-adaptation/assets/favicon-48x48-7fe43b6a.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../webjars/vividus-lighthouse-viewer-adaptation/assets/apple-touch-icon-322d6266.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../../webjars/vividus-lighthouse-viewer-adaptation/assets/apple-touch-icon-ipad-bb198203.png">
     <title>Lighthouse Report Diff Tool</title>
     <script type="dumb-dont-run-this">
         (function() {
@@ -28,14 +28,18 @@
         }());
     </script>
 
-    <link rel="stylesheet" href="./chunks/entry-JXBLQE2S.css">
+    <link rel="stylesheet" href="../../webjars/vividus-lighthouse-viewer-adaptation/chunks/entry-JXBLQE2S.css">
     </head>
-    
+
 
 <body>
     <noscript>Lighthouse report diff tool currently requires JavaScript.</noscript>
     <div id="preact-root"></div>
-    <script src="./chunks/entry-ADODYBVI.js" type="application/javascript"></script>
+    <script type="application/javascript">
+        window.__LIGHTHOUSE_JSON_BASE__ = ${baseline};
+        window.__LIGHTHOUSE_JSON_COMPARE__ = ${checkpoint};
+    </script>
+    <script src="../../webjars/vividus-lighthouse-viewer-adaptation/chunks/entry-ADODYBVI.js" type="application/javascript"></script>
 </body>
 
 </html>
