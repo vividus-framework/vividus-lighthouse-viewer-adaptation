@@ -1,11 +1,13 @@
 # Build guide
 
 1. Clone [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci.git) repository
-1. Open `lighthouse-ci/scripts/build-app.js` and disable JS minification by setting the `minify` to `false`
-1. Execute `npx lerna run --scope @lhci/viewer build` command to build viewer module
-1. Go to `lighthouse-ci/packages/viewer/dist` folder and copy all the content inside
+1. Go to the repository root directory: `cd lighthouse-ci`
+1. Edit `scripts/build-app.js` and disable JS minification by setting the `minify` to `false`
+1. Execute ` yarn install --frozen-lockfile` command
+1. Execute `yarn build` command
+1. Go to `packages/viewer/dist` folder and copy all its content
 1. Go to `vividus-lighthouse-viewer-adaptation` repository and create a new branch using `viewer-<lighthouse-ci commit hash used to build dist>` pattern
-1. Past previously copied content to current folder and commit changes using `Build: <lighthouse-ci commit hash used to build dist>` message format
+1. Paste previously copied content to the current folder and commit changes using `Build: <lighthouse-ci commit hash used to build dist>` message format
 1. Open `chunks/entry-<rand>.js` bundle and replace `baseReport` initialization in `App` component with the following code:
 
     ```
