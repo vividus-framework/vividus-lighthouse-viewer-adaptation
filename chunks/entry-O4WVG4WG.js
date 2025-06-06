@@ -78,7 +78,7 @@
   // ../server/src/ui/components/loading-spinner.svg
   var require_loading_spinner = __commonJS({
     "../server/src/ui/components/loading-spinner.svg"(exports, module) {
-      module.exports = "./assets/loading-spinner-N6LEBK7Y.svg";
+      module.exports = "../../webjars/vividus-lighthouse-viewer-adaptation/assets/loading-spinner-N6LEBK7Y.svg";
     }
   });
 
@@ -1763,21 +1763,21 @@
   // ../server/src/ui/favicon.svg
   var require_favicon = __commonJS({
     "../server/src/ui/favicon.svg"(exports, module) {
-      module.exports = "./assets/favicon-PWXHY3O5.svg";
+      module.exports = "../../webjars/vividus-lighthouse-viewer-adaptation/assets/favicon-PWXHY3O5.svg";
     }
   });
 
   // ../server/src/ui/routes/project-list/confetti.svg
   var require_confetti = __commonJS({
     "../server/src/ui/routes/project-list/confetti.svg"(exports, module) {
-      module.exports = "./assets/confetti-NE5ZCURM.svg";
+      module.exports = "../../webjars/vividus-lighthouse-viewer-adaptation/assets/confetti-NE5ZCURM.svg";
     }
   });
 
   // ../server/src/ui/logo.svg
   var require_logo = __commonJS({
     "../server/src/ui/logo.svg"(exports, module) {
-      module.exports = "./assets/logo-7LKJDYBP.svg";
+      module.exports = "../../webjars/vividus-lighthouse-viewer-adaptation/assets/logo-7LKJDYBP.svg";
     }
   });
 
@@ -4875,8 +4875,12 @@
       void 0
     );
     const [isLoading, setIsLoading] = h2(false);
-    const [baseReport, setBaseReport] = h2(initialReport);
-    const [compareReport, setCompareReport] = h2(initialReport);
+    const [baseReport, setBaseReport] = h2({
+      lhr: __LIGHTHOUSE_JSON_BASE__
+    });
+    const [compareReport, setCompareReport] = h2({
+      lhr: __LIGHTHOUSE_JSON_COMPARE__
+    });
     const [toasts, setToasts] = h2(
       /** @type {Array<ToastMessage>} */
       []
